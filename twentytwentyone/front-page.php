@@ -1,21 +1,12 @@
 <?php
 
-$args = array(
-  'cat'         => '2',
+/**************************************Loop**************************************/
+
+$args_loop = array(
+  'cat'         => '2'
 );
 
-$q = new WP_Query($args);
-
-/*if ( $q->have_posts() ) { 
-  while ( $q->have_posts() ) {
-    $q->the_post();
-  } else {
-	//no post found
-  }
-  
-  wp_reset_postdata();
-  
-}*/
+$q = new WP_Query($args_loop);
 
 if ( $q->have_posts() ) : 
     while ( $q->have_posts() ) : $q->the_post();
@@ -28,6 +19,19 @@ else :
 	wp_reset_postdata();
 	
 endif;
+
+/**************************************Loop**************************************/
+
+/**************************************MainNav**************************************/
+
+$args_mainNav = array(
+	'name' => 'mainNav'
+);
+
+wp_nav_menu($args_mainNav);
+
+
+/**************************************MainNav**************************************
 
 
 ?>

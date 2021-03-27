@@ -1,0 +1,18 @@
+/*
+Theme Name:  Twenty TwentyOne.
+Theme URI:  
+Description:  Child theme for the Twenty TwentyOne theme.
+Author:  emco
+Textdomain:  
+Author URI:  
+Template:  twentytwentyone
+Version:  1.0
+License:  GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html                 
+*/
+
+
+.test{
+	background-color: blue;
+	margin-top: 10rem;
+}
